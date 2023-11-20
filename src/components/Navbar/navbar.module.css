@@ -1,0 +1,45 @@
+:root {
+    --flex:flex;
+    --justify-content:center;
+    --align-item:center;
+    --flex-start:flex-start;
+    --normal-gap:8px;
+    --space-evenly:space-evenly;
+}
+
+
+.navbar {
+  padding: 3rem 3rem;
+ 
+}
+.logo {
+    display: var(--flex);
+    align-items: var(--flex-start);
+    align-items: var(--align-item);
+    gap: var(--normal-gap);
+}
+.logo h3 {
+    font-size: 22px;
+    letter-spacing: 1px;
+  cursor: pointer;
+}
+.logo h3:hover {
+    font-size: 20px;
+    /* transition: .3s ease-in; */
+}
+.top {
+    display: var(--flex);
+    /* justify-content: var(--space-evenly); */
+    justify-content: space-between;
+    align-items: var(--align-item);
+    width: 100%;
+}
+li  {
+    display: inline;
+}
+li a {
+    margin: 20px 20px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+}
