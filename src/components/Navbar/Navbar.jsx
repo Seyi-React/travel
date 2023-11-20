@@ -1,6 +1,7 @@
 import React from 'react'
 import  styles from './navbar.module.css'
 import { MdTravelExplore } from "react-icons/md";
+import { TbGridDots } from "react-icons/tb";
 
 const Navbar = () => {
   return (
@@ -9,10 +10,10 @@ const Navbar = () => {
            <div className="travel_top">
             <div className={styles.top}>
                 <div className={styles.logo}>
-                        <MdTravelExplore size={29}/>
+                        <MdTravelExplore size={29} color='#2e0359'/>
                          <h3>Travel</h3>
                 </div>
-                <div className="sections">
+                <div className={styles.sections}>
                     <li>
                         <a href="">Service</a>
                     </li>
@@ -26,8 +27,13 @@ const Navbar = () => {
                         <a href="">News</a>
                     </li>
                 </div>
-                <div className="now">
+                <div className={styles.now}>
                     <button>Book Now</button>
+                </div>
+
+                {/* Mobile */}
+                <div className={styles.icon_tag}>
+                    <TbGridDots color='#2e0459' size={30}/>
                 </div>
             </div>
            </div>

@@ -42,4 +42,42 @@ li a {
     text-decoration: none;
     color: black;
     letter-spacing: 1px;
+   
+}
+li a:hover {
+    color: #2e0359;
+}
+.now button {
+    background-color: #2e0359;
+    color: white;
+    font-family: 'poppins';
+    width: 140px;
+    border-radius: 50px;
+    height: 38px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.now button:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid #2e0359;
+}
+.now {
+    position: relative;
+    margin-right: 6rem;
+}
+.icon_tag {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .sections,.now {
+        display:none;
+
+    }
+    .icon_tag {
+        display: unset;
+    }
 }
