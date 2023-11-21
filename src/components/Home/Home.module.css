@@ -1,0 +1,81 @@
+.video_play {
+    position: relative;
+  top: 0;
+  left: 0;
+  width: 100%; /* Adjust as needed */
+  height: 100%; /* Adjust as needed */
+  object-fit: cover; /* Ensures the video covers the entire container */
+}
+.Home_container  {
+    position: relative;
+  
+}
+.overlay {
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 20%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    z-index: 5; /* Ensure the overlay is on top of the video */
+    display: flex;
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    flex-direction: column;
+    color: white;
+    margin: 2rem;
+}
+.over {
+    padding-bottom: 2.8rem;
+}
+.overlay p {
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+.overlay h1 {
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+}
+label {
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+input {
+    width: 250px;
+    height: 38px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    /* border-radius: 20px; */
+}
+
+@media screen and (max-width:768px) {
+    .overlay {
+        left: 40%;
+        height: fit-content;
+    }
+   
+    .over {
+        padding-bottom: 3.9rem;
+        margin-top: 14rem;
+        height: 43%;
+    }
+    .overlay h1 {
+        font-size: 2.4rem;
+        margin-top: 1rem;
+    }
+    .overlay p {
+        margin-top: 3rem;
+        /* padding: 10px; */
+    }
+    label {
+        color: black;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    input {
+        border: 1px solid grey;
+    }
+}
