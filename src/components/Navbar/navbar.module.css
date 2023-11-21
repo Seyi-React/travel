@@ -68,7 +68,7 @@ li a:hover {
     position: relative;
     margin-right: 6rem;
 }
-.icon_tag {
+.icon_tag,.close {
     display: none;
 }
 
@@ -77,7 +77,35 @@ li a:hover {
         display:none;
 
     }
-    .icon_tag {
+    .icon_tag,.close {
         display: unset;
+    }
+    .mobile_side {
+        background-color: aliceblue;
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        width: 70%;
+        padding: 30px;
+    }
+    .mobile li a {
+        display: block;
+    }
+    .mobile button {
+        background-color: #2e0359;
+        color: white;
+        font-family: 'poppins';
+        width: 120px;
+        border-radius: 50px;
+        height: 38px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        letter-spacing: 1px;
+    }
+    .mobile button:hover {
+        color: black;
+        background-color: white;
+        border: 1px solid #2e0359;
     }
 }
